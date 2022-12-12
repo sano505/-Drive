@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 color>Clicker Гослинг</h1>
+    <button class="d1" onclick="click2();"></button>
+	<p class="p1" id="d1">0</p> 
+    <div class="fb">
+        
+    <p class="p2" >Стоимость:</p><p class="p2" id="pi1"></p>
+    </div>
+    <input type="button" onclick="click3();" value="Улучшение" class="b2" >
+    
+
+<script>
+ let n = 0;
+ let r =1;
+ let i = 10;
+function click2(){
+    
+
+ n=n+ r;
+ document.getElementById('d1').innerHTML = n;
+}
+function click3(){
+    if (n>=i){
+        n=n-i;
+        r++;
+        i=i*5;
+        document.getElementById('d1').innerHTML = n;
+        document.getElementById('pi1').innerHTML = i;
+    }
+ }
+
+    if (window.performance) {
+        document.getElementById('pi1').innerHTML = i ;
+} 
+
+</script>
+<audio autoplay src="audio/гослингмузыка.mp3">
+    
+</audio>
+<button class="m1" onclick="new Audio('audio/гослингмузыка.mp3').play(); return false;">Play
+</body>
+</html>

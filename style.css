@@ -1,0 +1,85 @@
+
+h1{
+   color: white;
+    
+   
+        }
+p {
+font-size:50px;
+}
+        .d1 {
+margin: 50px;            
+width: 150px; 
+height: 150px;
+background-image: url(гослинг.png);
+border-radius: 50%;
+position: relative;
+animation-name: circle;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+.p1{
+    border :3px solid yellow;
+    max-width: 100px;
+    color: red;
+
+}
+.b2{ 
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #00FF00, #FFFF00);
+}
+.p2{
+    font-size: 30px;
+    color: orangered;
+}
+
+@keyframes circle{
+    0%{
+transform: translatex(0) translatey(0) ;
+
+    }
+    10%{
+        transform:  translatex(1350px);
+    }
+    
+    30%{
+        transform: translatex(1350px) translatey(550px) ;
+    }
+    45%{
+        transform: translatex(650px) translatey(250px) ;
+    }
+    65%{
+        transform: translatex(0) translatey(550px) ;
+    }
+    75%{
+        
+        transform: translatex(0) translatey(0) ;
+    }
+    80%{
+        
+        transform: translatex(650px) translatey(225px) ;
+    }
+    90%{
+        transform: translatex(1350px)  ;
+       
+    }
+    100%{
+        
+        transform: translatex(0) translatey(0) ;
+    }
+
+
+}
+.fb{
+    display: flex;
+}
+body{
+    background-image: url(гослингфон.jpg);
+}
+.m1{
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(45deg, #8A2BE2, #191970);
+}
